@@ -21,6 +21,36 @@
 		85701EA8199DA55800046905 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85701E8A199DA55800046905 /* UIKit.framework */; };
 		85701EB0199DA55800046905 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85701EAE199DA55800046905 /* InfoPlist.strings */; };
 		85701EB2199DA55800046905 /* YankeeFinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EB1199DA55800046905 /* YankeeFinderTests.m */; };
+		85701EC8199DABBB00046905 /* FNXYankeesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EC5199DABBB00046905 /* FNXYankeesAPI.m */; };
+		85701EC9199DABBB00046905 /* FNXYankeesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EC5199DABBB00046905 /* FNXYankeesAPI.m */; };
+		85701ECA199DABBB00046905 /* FNXRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EC7199DABBB00046905 /* FNXRequest.m */; };
+		85701ECB199DABBB00046905 /* FNXRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EC7199DABBB00046905 /* FNXRequest.m */; };
+		85701ED0199DBD0600046905 /* FNXPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701ECF199DBD0600046905 /* FNXPlayerViewController.m */; };
+		85701ED1199DBD0600046905 /* FNXPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701ECF199DBD0600046905 /* FNXPlayerViewController.m */; };
+		85701ED4199DBD2B00046905 /* FNXTeamListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701ED3199DBD2B00046905 /* FNXTeamListViewController.m */; };
+		85701ED5199DBD2B00046905 /* FNXTeamListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701ED3199DBD2B00046905 /* FNXTeamListViewController.m */; };
+		85701ED8199DC05A00046905 /* FNXPlayerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701ED7199DC05A00046905 /* FNXPlayerViewCell.m */; };
+		85701ED9199DC05A00046905 /* FNXPlayerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701ED7199DC05A00046905 /* FNXPlayerViewCell.m */; };
+		85701EEC199DC47300046905 /* FNXBatting.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EDB199DC47300046905 /* FNXBatting.m */; };
+		85701EED199DC47300046905 /* FNXBatting.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EDB199DC47300046905 /* FNXBatting.m */; };
+		85701EEE199DC47300046905 /* FNXBattingLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EDD199DC47300046905 /* FNXBattingLevel.m */; };
+		85701EEF199DC47300046905 /* FNXBattingLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EDD199DC47300046905 /* FNXBattingLevel.m */; };
+		85701EF0199DC47300046905 /* FNXBattingTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EDF199DC47300046905 /* FNXBattingTeam.m */; };
+		85701EF1199DC47300046905 /* FNXBattingTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EDF199DC47300046905 /* FNXBattingTeam.m */; };
+		85701EF2199DC47300046905 /* FNXPitching.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EE1199DC47300046905 /* FNXPitching.m */; };
+		85701EF3199DC47300046905 /* FNXPitching.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EE1199DC47300046905 /* FNXPitching.m */; };
+		85701EF4199DC47300046905 /* FNXPitchingLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EE3199DC47300046905 /* FNXPitchingLevel.m */; };
+		85701EF5199DC47300046905 /* FNXPitchingLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EE3199DC47300046905 /* FNXPitchingLevel.m */; };
+		85701EF6199DC47300046905 /* FNXPitchingTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EE5199DC47300046905 /* FNXPitchingTeam.m */; };
+		85701EF7199DC47300046905 /* FNXPitchingTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EE5199DC47300046905 /* FNXPitchingTeam.m */; };
+		85701EF8199DC47300046905 /* FNXStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EE7199DC47300046905 /* FNXStats.m */; };
+		85701EF9199DC47300046905 /* FNXStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EE7199DC47300046905 /* FNXStats.m */; };
+		85701EFA199DC47300046905 /* FNXPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EE9199DC47300046905 /* FNXPlayer.m */; };
+		85701EFB199DC47300046905 /* FNXPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EE9199DC47300046905 /* FNXPlayer.m */; };
+		85701EFC199DC47300046905 /* FNXTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EEB199DC47300046905 /* FNXTeam.m */; };
+		85701EFD199DC47300046905 /* FNXTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EEB199DC47300046905 /* FNXTeam.m */; };
+		85701F00199E3BAC00046905 /* FNXTeamViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EFF199E3BAC00046905 /* FNXTeamViewCell.m */; };
+		85701F01199E3BAC00046905 /* FNXTeamViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EFF199E3BAC00046905 /* FNXTeamViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +83,37 @@
 		85701EAD199DA55800046905 /* YankeeFinderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YankeeFinderTests-Info.plist"; sourceTree = "<group>"; };
 		85701EAF199DA55800046905 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		85701EB1199DA55800046905 /* YankeeFinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YankeeFinderTests.m; sourceTree = "<group>"; };
+		85701EC4199DABBB00046905 /* FNXYankeesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNXYankeesAPI.h; sourceTree = "<group>"; };
+		85701EC5199DABBB00046905 /* FNXYankeesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNXYankeesAPI.m; sourceTree = "<group>"; };
+		85701EC6199DABBB00046905 /* FNXRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNXRequest.h; sourceTree = "<group>"; };
+		85701EC7199DABBB00046905 /* FNXRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNXRequest.m; sourceTree = "<group>"; };
+		85701ECC199DAE9B00046905 /* ConstantsAndMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantsAndMacros.h; sourceTree = "<group>"; };
+		85701ECE199DBD0600046905 /* FNXPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FNXPlayerViewController.h; path = Controllers/FNXPlayerViewController.h; sourceTree = "<group>"; };
+		85701ECF199DBD0600046905 /* FNXPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FNXPlayerViewController.m; path = Controllers/FNXPlayerViewController.m; sourceTree = "<group>"; };
+		85701ED2199DBD2B00046905 /* FNXTeamListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FNXTeamListViewController.h; path = Controllers/FNXTeamListViewController.h; sourceTree = "<group>"; };
+		85701ED3199DBD2B00046905 /* FNXTeamListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FNXTeamListViewController.m; path = Controllers/FNXTeamListViewController.m; sourceTree = "<group>"; };
+		85701ED6199DC05900046905 /* FNXPlayerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FNXPlayerViewCell.h; path = Controllers/FNXPlayerViewCell.h; sourceTree = "<group>"; };
+		85701ED7199DC05A00046905 /* FNXPlayerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FNXPlayerViewCell.m; path = Controllers/FNXPlayerViewCell.m; sourceTree = "<group>"; };
+		85701EDA199DC47300046905 /* FNXBatting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNXBatting.h; sourceTree = "<group>"; };
+		85701EDB199DC47300046905 /* FNXBatting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNXBatting.m; sourceTree = "<group>"; };
+		85701EDC199DC47300046905 /* FNXBattingLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNXBattingLevel.h; sourceTree = "<group>"; };
+		85701EDD199DC47300046905 /* FNXBattingLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNXBattingLevel.m; sourceTree = "<group>"; };
+		85701EDE199DC47300046905 /* FNXBattingTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNXBattingTeam.h; sourceTree = "<group>"; };
+		85701EDF199DC47300046905 /* FNXBattingTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNXBattingTeam.m; sourceTree = "<group>"; };
+		85701EE0199DC47300046905 /* FNXPitching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNXPitching.h; sourceTree = "<group>"; };
+		85701EE1199DC47300046905 /* FNXPitching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNXPitching.m; sourceTree = "<group>"; };
+		85701EE2199DC47300046905 /* FNXPitchingLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNXPitchingLevel.h; sourceTree = "<group>"; };
+		85701EE3199DC47300046905 /* FNXPitchingLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNXPitchingLevel.m; sourceTree = "<group>"; };
+		85701EE4199DC47300046905 /* FNXPitchingTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNXPitchingTeam.h; sourceTree = "<group>"; };
+		85701EE5199DC47300046905 /* FNXPitchingTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNXPitchingTeam.m; sourceTree = "<group>"; };
+		85701EE6199DC47300046905 /* FNXStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNXStats.h; sourceTree = "<group>"; };
+		85701EE7199DC47300046905 /* FNXStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNXStats.m; sourceTree = "<group>"; };
+		85701EE8199DC47300046905 /* FNXPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNXPlayer.h; sourceTree = "<group>"; };
+		85701EE9199DC47300046905 /* FNXPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNXPlayer.m; sourceTree = "<group>"; };
+		85701EEA199DC47300046905 /* FNXTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNXTeam.h; sourceTree = "<group>"; };
+		85701EEB199DC47300046905 /* FNXTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNXTeam.m; sourceTree = "<group>"; };
+		85701EFE199E3BAC00046905 /* FNXTeamViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FNXTeamViewCell.h; path = Controllers/FNXTeamViewCell.h; sourceTree = "<group>"; };
+		85701EFF199E3BAC00046905 /* FNXTeamViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FNXTeamViewCell.m; path = Controllers/FNXTeamViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +173,8 @@
 		85701E8C199DA55800046905 /* YankeeFinder */ = {
 			isa = PBXGroup;
 			children = (
+				85701ECD199DBC8E00046905 /* Controllers */,
+				85701EC3199DABBB00046905 /* Models */,
 				85701E95199DA55800046905 /* FNXAppDelegate.h */,
 				85701E96199DA55800046905 /* FNXAppDelegate.m */,
 				85701E98199DA55800046905 /* Main.storyboard */,
@@ -130,6 +193,7 @@
 				85701E8F199DA55800046905 /* InfoPlist.strings */,
 				85701E92199DA55800046905 /* main.m */,
 				85701E94199DA55800046905 /* YankeeFinder-Prefix.pch */,
+				85701ECC199DAE9B00046905 /* ConstantsAndMacros.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -150,6 +214,50 @@
 				85701EAE199DA55800046905 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85701EC3199DABBB00046905 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85701EC4199DABBB00046905 /* FNXYankeesAPI.h */,
+				85701EC5199DABBB00046905 /* FNXYankeesAPI.m */,
+				85701EC6199DABBB00046905 /* FNXRequest.h */,
+				85701EC7199DABBB00046905 /* FNXRequest.m */,
+				85701EDA199DC47300046905 /* FNXBatting.h */,
+				85701EDB199DC47300046905 /* FNXBatting.m */,
+				85701EDC199DC47300046905 /* FNXBattingLevel.h */,
+				85701EDD199DC47300046905 /* FNXBattingLevel.m */,
+				85701EDE199DC47300046905 /* FNXBattingTeam.h */,
+				85701EDF199DC47300046905 /* FNXBattingTeam.m */,
+				85701EE0199DC47300046905 /* FNXPitching.h */,
+				85701EE1199DC47300046905 /* FNXPitching.m */,
+				85701EE2199DC47300046905 /* FNXPitchingLevel.h */,
+				85701EE3199DC47300046905 /* FNXPitchingLevel.m */,
+				85701EE4199DC47300046905 /* FNXPitchingTeam.h */,
+				85701EE5199DC47300046905 /* FNXPitchingTeam.m */,
+				85701EE6199DC47300046905 /* FNXStats.h */,
+				85701EE7199DC47300046905 /* FNXStats.m */,
+				85701EE8199DC47300046905 /* FNXPlayer.h */,
+				85701EE9199DC47300046905 /* FNXPlayer.m */,
+				85701EEA199DC47300046905 /* FNXTeam.h */,
+				85701EEB199DC47300046905 /* FNXTeam.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		85701ECD199DBC8E00046905 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				85701ECE199DBD0600046905 /* FNXPlayerViewController.h */,
+				85701ECF199DBD0600046905 /* FNXPlayerViewController.m */,
+				85701ED2199DBD2B00046905 /* FNXTeamListViewController.h */,
+				85701ED3199DBD2B00046905 /* FNXTeamListViewController.m */,
+				85701ED6199DC05900046905 /* FNXPlayerViewCell.h */,
+				85701ED7199DC05A00046905 /* FNXPlayerViewCell.m */,
+				85701EFE199E3BAC00046905 /* FNXTeamViewCell.h */,
+				85701EFF199E3BAC00046905 /* FNXTeamViewCell.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +360,22 @@
 			files = (
 				85701E93199DA55800046905 /* main.m in Sources */,
 				85701E97199DA55800046905 /* FNXAppDelegate.m in Sources */,
+				85701EFC199DC47300046905 /* FNXTeam.m in Sources */,
+				85701EF2199DC47300046905 /* FNXPitching.m in Sources */,
+				85701EF4199DC47300046905 /* FNXPitchingLevel.m in Sources */,
+				85701ECA199DABBB00046905 /* FNXRequest.m in Sources */,
+				85701EF0199DC47300046905 /* FNXBattingTeam.m in Sources */,
+				85701EC8199DABBB00046905 /* FNXYankeesAPI.m in Sources */,
+				85701F00199E3BAC00046905 /* FNXTeamViewCell.m in Sources */,
+				85701ED8199DC05A00046905 /* FNXPlayerViewCell.m in Sources */,
+				85701EF8199DC47300046905 /* FNXStats.m in Sources */,
+				85701EEC199DC47300046905 /* FNXBatting.m in Sources */,
+				85701ED4199DBD2B00046905 /* FNXTeamListViewController.m in Sources */,
+				85701ED0199DBD0600046905 /* FNXPlayerViewController.m in Sources */,
+				85701EF6199DC47300046905 /* FNXPitchingTeam.m in Sources */,
 				85701E9D199DA55800046905 /* FNXViewController.m in Sources */,
+				85701EEE199DC47300046905 /* FNXBattingLevel.m in Sources */,
+				85701EFA199DC47300046905 /* FNXPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +383,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85701EF3199DC47300046905 /* FNXPitching.m in Sources */,
+				85701EF7199DC47300046905 /* FNXPitchingTeam.m in Sources */,
+				85701ED5199DBD2B00046905 /* FNXTeamListViewController.m in Sources */,
+				85701EEF199DC47300046905 /* FNXBattingLevel.m in Sources */,
+				85701EF9199DC47300046905 /* FNXStats.m in Sources */,
+				85701EFB199DC47300046905 /* FNXPlayer.m in Sources */,
+				85701EF1199DC47300046905 /* FNXBattingTeam.m in Sources */,
+				85701EF5199DC47300046905 /* FNXPitchingLevel.m in Sources */,
+				85701ED1199DBD0600046905 /* FNXPlayerViewController.m in Sources */,
+				85701EED199DC47300046905 /* FNXBatting.m in Sources */,
+				85701F01199E3BAC00046905 /* FNXTeamViewCell.m in Sources */,
+				85701EC9199DABBB00046905 /* FNXYankeesAPI.m in Sources */,
+				85701ECB199DABBB00046905 /* FNXRequest.m in Sources */,
+				85701ED9199DC05A00046905 /* FNXPlayerViewCell.m in Sources */,
 				85701EB2199DA55800046905 /* YankeeFinderTests.m in Sources */,
+				85701EFD199DC47300046905 /* FNXTeam.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
