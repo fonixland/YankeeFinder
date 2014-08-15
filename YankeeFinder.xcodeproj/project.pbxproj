@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85701E87199DA55800046905 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85701E86199DA55800046905 /* Foundation.framework */; };
+		85701E89199DA55800046905 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85701E88199DA55800046905 /* CoreGraphics.framework */; };
+		85701E8B199DA55800046905 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85701E8A199DA55800046905 /* UIKit.framework */; };
+		85701E91199DA55800046905 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85701E8F199DA55800046905 /* InfoPlist.strings */; };
+		85701E93199DA55800046905 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701E92199DA55800046905 /* main.m */; };
+		85701E97199DA55800046905 /* FNXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701E96199DA55800046905 /* FNXAppDelegate.m */; };
+		85701E9A199DA55800046905 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85701E98199DA55800046905 /* Main.storyboard */; };
+		85701E9D199DA55800046905 /* FNXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701E9C199DA55800046905 /* FNXViewController.m */; };
+		85701E9F199DA55800046905 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85701E9E199DA55800046905 /* Images.xcassets */; };
+		85701EA6199DA55800046905 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85701EA5199DA55800046905 /* XCTest.framework */; };
+		85701EA7199DA55800046905 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85701E86199DA55800046905 /* Foundation.framework */; };
+		85701EA8199DA55800046905 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85701E8A199DA55800046905 /* UIKit.framework */; };
+		85701EB0199DA55800046905 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85701EAE199DA55800046905 /* InfoPlist.strings */; };
+		85701EB2199DA55800046905 /* YankeeFinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EB1199DA55800046905 /* YankeeFinderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85701EA9199DA55800046905 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85701E7B199DA55700046905 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85701E82199DA55800046905;
+			remoteInfo = YankeeFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85701E83199DA55800046905 /* YankeeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YankeeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85701E86199DA55800046905 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		85701E88199DA55800046905 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		85701E8A199DA55800046905 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		85701E8E199DA55800046905 /* YankeeFinder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YankeeFinder-Info.plist"; sourceTree = "<group>"; };
+		85701E90199DA55800046905 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		85701E92199DA55800046905 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85701E94199DA55800046905 /* YankeeFinder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YankeeFinder-Prefix.pch"; sourceTree = "<group>"; };
+		85701E95199DA55800046905 /* FNXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNXAppDelegate.h; sourceTree = "<group>"; };
+		85701E96199DA55800046905 /* FNXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNXAppDelegate.m; sourceTree = "<group>"; };
+		85701E99199DA55800046905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85701E9B199DA55800046905 /* FNXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FNXViewController.h; sourceTree = "<group>"; };
+		85701E9C199DA55800046905 /* FNXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNXViewController.m; sourceTree = "<group>"; };
+		85701E9E199DA55800046905 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		85701EA4199DA55800046905 /* YankeeFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YankeeFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85701EA5199DA55800046905 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		85701EAD199DA55800046905 /* YankeeFinderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YankeeFinderTests-Info.plist"; sourceTree = "<group>"; };
+		85701EAF199DA55800046905 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		85701EB1199DA55800046905 /* YankeeFinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YankeeFinderTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85701E80199DA55800046905 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85701E89199DA55800046905 /* CoreGraphics.framework in Frameworks */,
+				85701E8B199DA55800046905 /* UIKit.framework in Frameworks */,
+				85701E87199DA55800046905 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85701EA1199DA55800046905 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85701EA6199DA55800046905 /* XCTest.framework in Frameworks */,
+				85701EA8199DA55800046905 /* UIKit.framework in Frameworks */,
+				85701EA7199DA55800046905 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85701E7A199DA55700046905 = {
+			isa = PBXGroup;
+			children = (
+				85701E8C199DA55800046905 /* YankeeFinder */,
+				85701EAB199DA55800046905 /* YankeeFinderTests */,
+				85701E85199DA55800046905 /* Frameworks */,
+				85701E84199DA55800046905 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85701E84199DA55800046905 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85701E83199DA55800046905 /* YankeeFinder.app */,
+				85701EA4199DA55800046905 /* YankeeFinderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85701E85199DA55800046905 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85701E86199DA55800046905 /* Foundation.framework */,
+				85701E88199DA55800046905 /* CoreGraphics.framework */,
+				85701E8A199DA55800046905 /* UIKit.framework */,
+				85701EA5199DA55800046905 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85701E8C199DA55800046905 /* YankeeFinder */ = {
+			isa = PBXGroup;
+			children = (
+				85701E95199DA55800046905 /* FNXAppDelegate.h */,
+				85701E96199DA55800046905 /* FNXAppDelegate.m */,
+				85701E98199DA55800046905 /* Main.storyboard */,
+				85701E9B199DA55800046905 /* FNXViewController.h */,
+				85701E9C199DA55800046905 /* FNXViewController.m */,
+				85701E9E199DA55800046905 /* Images.xcassets */,
+				85701E8D199DA55800046905 /* Supporting Files */,
+			);
+			path = YankeeFinder;
+			sourceTree = "<group>";
+		};
+		85701E8D199DA55800046905 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85701E8E199DA55800046905 /* YankeeFinder-Info.plist */,
+				85701E8F199DA55800046905 /* InfoPlist.strings */,
+				85701E92199DA55800046905 /* main.m */,
+				85701E94199DA55800046905 /* YankeeFinder-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85701EAB199DA55800046905 /* YankeeFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				85701EB1199DA55800046905 /* YankeeFinderTests.m */,
+				85701EAC199DA55800046905 /* Supporting Files */,
+			);
+			path = YankeeFinderTests;
+			sourceTree = "<group>";
+		};
+		85701EAC199DA55800046905 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85701EAD199DA55800046905 /* YankeeFinderTests-Info.plist */,
+				85701EAE199DA55800046905 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85701E82199DA55800046905 /* YankeeFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85701EB5199DA55800046905 /* Build configuration list for PBXNativeTarget "YankeeFinder" */;
+			buildPhases = (
+				85701E7F199DA55800046905 /* Sources */,
+				85701E80199DA55800046905 /* Frameworks */,
+				85701E81199DA55800046905 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YankeeFinder;
+			productName = YankeeFinder;
+			productReference = 85701E83199DA55800046905 /* YankeeFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85701EA3199DA55800046905 /* YankeeFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85701EB8199DA55800046905 /* Build configuration list for PBXNativeTarget "YankeeFinderTests" */;
+			buildPhases = (
+				85701EA0199DA55800046905 /* Sources */,
+				85701EA1199DA55800046905 /* Frameworks */,
+				85701EA2199DA55800046905 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85701EAA199DA55800046905 /* PBXTargetDependency */,
+			);
+			name = YankeeFinderTests;
+			productName = YankeeFinderTests;
+			productReference = 85701EA4199DA55800046905 /* YankeeFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85701E7B199DA55700046905 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FNX;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Fonixland Studios";
+				TargetAttributes = {
+					85701EA3199DA55800046905 = {
+						TestTargetID = 85701E82199DA55800046905;
+					};
+				};
+			};
+			buildConfigurationList = 85701E7E199DA55700046905 /* Build configuration list for PBXProject "YankeeFinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85701E7A199DA55700046905;
+			productRefGroup = 85701E84199DA55800046905 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85701E82199DA55800046905 /* YankeeFinder */,
+				85701EA3199DA55800046905 /* YankeeFinderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85701E81199DA55800046905 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85701E9F199DA55800046905 /* Images.xcassets in Resources */,
+				85701E91199DA55800046905 /* InfoPlist.strings in Resources */,
+				85701E9A199DA55800046905 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85701EA2199DA55800046905 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85701EB0199DA55800046905 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85701E7F199DA55800046905 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85701E93199DA55800046905 /* main.m in Sources */,
+				85701E97199DA55800046905 /* FNXAppDelegate.m in Sources */,
+				85701E9D199DA55800046905 /* FNXViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85701EA0199DA55800046905 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85701EB2199DA55800046905 /* YankeeFinderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85701EAA199DA55800046905 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85701E82199DA55800046905 /* YankeeFinder */;
+			targetProxy = 85701EA9199DA55800046905 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85701E8F199DA55800046905 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85701E90199DA55800046905 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		85701E98199DA55800046905 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85701E99199DA55800046905 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85701EAE199DA55800046905 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85701EAF199DA55800046905 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85701EB3199DA55800046905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		85701EB4199DA55800046905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85701EB6199DA55800046905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YankeeFinder/YankeeFinder-Prefix.pch";
+				INFOPLIST_FILE = "YankeeFinder/YankeeFinder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		85701EB7199DA55800046905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YankeeFinder/YankeeFinder-Prefix.pch";
+				INFOPLIST_FILE = "YankeeFinder/YankeeFinder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		85701EB9199DA55800046905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YankeeFinder.app/YankeeFinder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YankeeFinder/YankeeFinder-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YankeeFinderTests/YankeeFinderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		85701EBA199DA55800046905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YankeeFinder.app/YankeeFinder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YankeeFinder/YankeeFinder-Prefix.pch";
+				INFOPLIST_FILE = "YankeeFinderTests/YankeeFinderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85701E7E199DA55700046905 /* Build configuration list for PBXProject "YankeeFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85701EB3199DA55800046905 /* Debug */,
+				85701EB4199DA55800046905 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85701EB5199DA55800046905 /* Build configuration list for PBXNativeTarget "YankeeFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85701EB6199DA55800046905 /* Debug */,
+				85701EB7199DA55800046905 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		85701EB8199DA55800046905 /* Build configuration list for PBXNativeTarget "YankeeFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85701EB9199DA55800046905 /* Debug */,
+				85701EBA199DA55800046905 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85701E7B199DA55700046905 /* Project object */;
+}
