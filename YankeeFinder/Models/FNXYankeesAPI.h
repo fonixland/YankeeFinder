@@ -18,6 +18,7 @@
 -(void) getPlayerWithId:(NSString *)playerId WithCallback:(FNXObjectCallback)callback;
 -(void) getPlayerStatsWithId:(NSString *)playerId WithCallback:(FNXObjectCallback)callback;
 -(void) getPlayerPhoto:(NSString *)photoUrl WithCallback:(FNXObjectCallback)callback;
+-(void) getTeamWithId:(NSString *)teamId WithCallback:(FNXObjectCallback)callback;
 -(void) getTeamWithCallback:(FNXObjectCallback)callback;
 -(void) getRosterWithTeamId:(NSString *)teamId WithCallback:(FNXObjectCallback)callback;
 

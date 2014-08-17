@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		852222E519A0408E0084AE05 /* FNXSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 852222E419A0408E0084AE05 /* FNXSearchResultsViewController.m */; };
+		852222E619A0408E0084AE05 /* FNXSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 852222E419A0408E0084AE05 /* FNXSearchResultsViewController.m */; };
+		852222E919A04AAE0084AE05 /* FNXSearchResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 852222E819A04AAE0084AE05 /* FNXSearchResultsTableViewCell.m */; };
+		852222EA19A04AAE0084AE05 /* FNXSearchResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 852222E819A04AAE0084AE05 /* FNXSearchResultsTableViewCell.m */; };
 		85701E87199DA55800046905 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85701E86199DA55800046905 /* Foundation.framework */; };
 		85701E89199DA55800046905 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85701E88199DA55800046905 /* CoreGraphics.framework */; };
 		85701E8B199DA55800046905 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85701E8A199DA55800046905 /* UIKit.framework */; };
@@ -70,6 +74,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		852222E319A0408E0084AE05 /* FNXSearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FNXSearchResultsViewController.h; path = Controllers/FNXSearchResultsViewController.h; sourceTree = "<group>"; };
+		852222E419A0408E0084AE05 /* FNXSearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FNXSearchResultsViewController.m; path = Controllers/FNXSearchResultsViewController.m; sourceTree = "<group>"; };
+		852222E719A04AAE0084AE05 /* FNXSearchResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FNXSearchResultsTableViewCell.h; path = Controllers/FNXSearchResultsTableViewCell.h; sourceTree = "<group>"; };
+		852222E819A04AAE0084AE05 /* FNXSearchResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FNXSearchResultsTableViewCell.m; path = Controllers/FNXSearchResultsTableViewCell.m; sourceTree = "<group>"; };
 		85701E83199DA55800046905 /* YankeeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YankeeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85701E86199DA55800046905 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		85701E88199DA55800046905 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -274,6 +282,10 @@
 				85701ECF199DBD0600046905 /* FNXPlayerViewController.m */,
 				85701ED6199DC05900046905 /* FNXPlayerViewCell.h */,
 				85701ED7199DC05A00046905 /* FNXPlayerViewCell.m */,
+				852222E319A0408E0084AE05 /* FNXSearchResultsViewController.h */,
+				852222E419A0408E0084AE05 /* FNXSearchResultsViewController.m */,
+				852222E719A04AAE0084AE05 /* FNXSearchResultsTableViewCell.h */,
+				852222E819A04AAE0084AE05 /* FNXSearchResultsTableViewCell.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -396,6 +408,8 @@
 				85701E9D199DA55800046905 /* FNXViewController.m in Sources */,
 				85701F04199E6CFC00046905 /* FNXRosterViewController.m in Sources */,
 				85701EEE199DC47300046905 /* FNXBattingLevel.m in Sources */,
+				852222E919A04AAE0084AE05 /* FNXSearchResultsTableViewCell.m in Sources */,
+				852222E519A0408E0084AE05 /* FNXSearchResultsViewController.m in Sources */,
 				85701EFA199DC47300046905 /* FNXPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				852222E619A0408E0084AE05 /* FNXSearchResultsViewController.m in Sources */,
 				85701EF3199DC47300046905 /* FNXPitching.m in Sources */,
 				85701EF7199DC47300046905 /* FNXPitchingTeam.m in Sources */,
 				85701ED5199DBD2B00046905 /* FNXTeamListViewController.m in Sources */,
@@ -413,6 +428,7 @@
 				85701EF1199DC47300046905 /* FNXBattingTeam.m in Sources */,
 				85701EF5199DC47300046905 /* FNXPitchingLevel.m in Sources */,
 				85FE835E19A038D4001BBBCA /* FNXSearchViewController.m in Sources */,
+				852222EA19A04AAE0084AE05 /* FNXSearchResultsTableViewCell.m in Sources */,
 				85701ED1199DBD0600046905 /* FNXPlayerViewController.m in Sources */,
 				85701EED199DC47300046905 /* FNXBatting.m in Sources */,
 				85701F01199E3BAC00046905 /* FNXTeamViewCell.m in Sources */,

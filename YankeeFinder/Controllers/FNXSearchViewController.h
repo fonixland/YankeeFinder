@@ -10,4 +10,8 @@
 
 @interface FNXSearchViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *searchTextField;
+
+- (IBAction)searchButtonPressed:(id)sender;
+
 @end

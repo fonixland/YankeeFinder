@@ -133,6 +133,23 @@
 }
 
 /**
+ *  getTeamWithId:
+ *
+ *  @param callback containing an NSDictionary with the parsed JSON response, and an NSError if the API call fails
+ */
+-(void) getTeamWithId:(NSString *)teamId WithCallback:(FNXObjectCallback)callback {
+    NSString *url = [NSString stringWithFormat:@"http://yankeesapplicant.azurewebsites.net/api/team/%@", teamId];
+    
+    FNXDebugLog(@"API - the url is - %@", url);
+    
+    [self createRequestWithType:@"GET" withUrl:url withParams:nil withCallback:^(NSDictionary *getRosterResponse, NSError *error)
+     {
+         FNXDebugLog(@"API - response is - %@", getRosterResponse);
+         callback(getRosterResponse, error);
+     }];
+}
+
+/**
  *  getRosterWithTeamId:
  *
  *  @param callback containing an NSDictionary with the parsed JSON response, and an NSError if the API call fails
