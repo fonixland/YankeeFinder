@@ -48,7 +48,7 @@
 
 #pragma mark - API Call Methods
 /**
- *  getPlayerWithCallback:
+ *  getPlayerWithSearchString:WithCallback:
  *
  *  @param callback containing an NSDictionary with the parsed JSON response, and an NSError if the API call fails
  */
@@ -61,6 +61,57 @@
      {
          FNXDebugLog(@"API - response is - %@", getPlayerResponse);
          callback(getPlayerResponse, error);
+     }];
+}
+
+/**
+ *  getPlayerWithId:WithCallback:
+ *
+ *  @param callback containing an NSDictionary with the parsed JSON response, and an NSError if the API call fails
+ */
+-(void) getPlayerWithId:(NSString *)playerId WithCallback:(FNXObjectCallback)callback {
+    NSString *url = [NSString stringWithFormat:@"http://yankeesapplicant.azurewebsites.net/api/player/%@", playerId];
+    
+    FNXDebugLog(@"API - the url is - %@", url);
+    
+    [self createRequestWithType:@"GET" withUrl:url withParams:nil withCallback:^(NSDictionary *getPlayerResponse, NSError *error)
+     {
+         FNXDebugLog(@"API - response is - %@", getPlayerResponse);
+         callback(getPlayerResponse, error);
+     }];
+}
+
+/**
+ *  getPlayerWithId:WithCallback:
+ *
+ *  @param callback containing an NSDictionary with the parsed JSON response, and an NSError if the API call fails
+ */
+-(void) getPlayerStatsWithId:(NSString *)playerId WithCallback:(FNXObjectCallback)callback {
+    NSString *url = [NSString stringWithFormat:@"http://yankeesapplicant.azurewebsites.net/api/player/%@/stats", playerId];
+    
+    FNXDebugLog(@"API - the url is - %@", url);
+    
+    [self createRequestWithType:@"GET" withUrl:url withParams:nil withCallback:^(NSDictionary *getPlayerResponse, NSError *error)
+     {
+         FNXDebugLog(@"API - response is - %@", getPlayerResponse);
+         callback(getPlayerResponse, error);
+     }];
+}
+
+/**
+ *  getPlayerPhoto:WithCallback:
+ *
+ *  @param callback containing an NSDictionary with the parsed JSON response, and an NSError if the API call fails
+ */
+-(void) getPlayerPhoto:(NSString *)photoUrl WithCallback:(FNXObjectCallback)callback {
+    NSString *url = photoUrl;
+    
+    FNXDebugLog(@"API - the url is - %@", url);
+    
+    [self createMediaRequestWithType:@"GET" withUrl:url withParams:nil withCallback:^(NSData *getPlayerPhotoResponse, NSError *error)
+     {
+                  FNXDebugLog(@"API - response is - %@", getPlayerPhotoResponse);
+         callback(getPlayerPhotoResponse, error);
      }];
 }
 
@@ -81,6 +132,22 @@
      }];
 }
 
+/**
+ *  getRosterWithTeamId:
+ *
+ *  @param callback containing an NSDictionary with the parsed JSON response, and an NSError if the API call fails
+ */
+-(void) getRosterWithTeamId:(NSString *)teamId WithCallback:(FNXObjectCallback)callback {
+    NSString *url = [NSString stringWithFormat:@"http://yankeesapplicant.azurewebsites.net/api/team/%@/roster", teamId];
+    
+    FNXDebugLog(@"API - the url is - %@", url);
+    
+    [self createRequestWithType:@"GET" withUrl:url withParams:nil withCallback:^(NSDictionary *getRosterResponse, NSError *error)
+     {
+         FNXDebugLog(@"API - response is - %@", getRosterResponse);
+         callback(getRosterResponse, error);
+     }];
+}
 
 
 #pragma mark - Private Methods

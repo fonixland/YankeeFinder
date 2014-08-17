@@ -19,7 +19,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+       
     }
+    
     return self;
 }
 
@@ -27,6 +29,42 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = _player.fullName;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    if (_player.fullName.length < 1) {
+        //search
+    }
+    else
+    {
+        [self getPlayerInfo];
+    }
+}
+
+- (void)getPlayerInfo
+{
+    FNXYankeesAPI *yankeesHandler = [[FNXYankeesAPI alloc] init];
+    
+    [yankeesHandler getPlayerPhoto:_player.headShotURL WithCallback:^(NSData *playerPhotoData, NSError *error)
+     {
+         if (!error) {
+             UIImage *img = [[UIImage alloc]initWithData:playerPhotoData];
+             _playerPhoto.image = img;
+         }
+     }];
+    
+    _birthInfo.text = [NSString stringWithFormat:@"Born: %@, %@, %@", _player.birthCity, _player.birthState, _player.birthCountry];
+    _playerNumber.text = [NSString stringWithFormat:@"Number: %@", _player.number];
+    
+    if (!_player.isPitcher) {
+        //get batting stats
+    }
+    else
+    {
+        //get pitching stats
+    }
 }
 
 - (void)didReceiveMemoryWarning

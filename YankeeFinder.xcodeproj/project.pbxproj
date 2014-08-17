@@ -51,6 +51,12 @@
 		85701EFD199DC47300046905 /* FNXTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EEB199DC47300046905 /* FNXTeam.m */; };
 		85701F00199E3BAC00046905 /* FNXTeamViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EFF199E3BAC00046905 /* FNXTeamViewCell.m */; };
 		85701F01199E3BAC00046905 /* FNXTeamViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701EFF199E3BAC00046905 /* FNXTeamViewCell.m */; };
+		85701F04199E6CFC00046905 /* FNXRosterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701F03199E6CFC00046905 /* FNXRosterViewController.m */; };
+		85701F05199E6CFC00046905 /* FNXRosterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701F03199E6CFC00046905 /* FNXRosterViewController.m */; };
+		85701F08199E6D9200046905 /* FNXRosterViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701F07199E6D9200046905 /* FNXRosterViewCell.m */; };
+		85701F09199E6D9200046905 /* FNXRosterViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85701F07199E6D9200046905 /* FNXRosterViewCell.m */; };
+		85FE835D19A038D4001BBBCA /* FNXSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FE835C19A038D4001BBBCA /* FNXSearchViewController.m */; };
+		85FE835E19A038D4001BBBCA /* FNXSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FE835C19A038D4001BBBCA /* FNXSearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +120,12 @@
 		85701EEB199DC47300046905 /* FNXTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNXTeam.m; sourceTree = "<group>"; };
 		85701EFE199E3BAC00046905 /* FNXTeamViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FNXTeamViewCell.h; path = Controllers/FNXTeamViewCell.h; sourceTree = "<group>"; };
 		85701EFF199E3BAC00046905 /* FNXTeamViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FNXTeamViewCell.m; path = Controllers/FNXTeamViewCell.m; sourceTree = "<group>"; };
+		85701F02199E6CFC00046905 /* FNXRosterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FNXRosterViewController.h; path = Controllers/FNXRosterViewController.h; sourceTree = "<group>"; };
+		85701F03199E6CFC00046905 /* FNXRosterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FNXRosterViewController.m; path = Controllers/FNXRosterViewController.m; sourceTree = "<group>"; };
+		85701F06199E6D9200046905 /* FNXRosterViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FNXRosterViewCell.h; path = Controllers/FNXRosterViewCell.h; sourceTree = "<group>"; };
+		85701F07199E6D9200046905 /* FNXRosterViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FNXRosterViewCell.m; path = Controllers/FNXRosterViewCell.m; sourceTree = "<group>"; };
+		85FE835B19A038D4001BBBCA /* FNXSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FNXSearchViewController.h; path = Controllers/FNXSearchViewController.h; sourceTree = "<group>"; };
+		85FE835C19A038D4001BBBCA /* FNXSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FNXSearchViewController.m; path = Controllers/FNXSearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,13 +185,13 @@
 		85701E8C199DA55800046905 /* YankeeFinder */ = {
 			isa = PBXGroup;
 			children = (
-				85701ECD199DBC8E00046905 /* Controllers */,
-				85701EC3199DABBB00046905 /* Models */,
 				85701E95199DA55800046905 /* FNXAppDelegate.h */,
 				85701E96199DA55800046905 /* FNXAppDelegate.m */,
 				85701E98199DA55800046905 /* Main.storyboard */,
 				85701E9B199DA55800046905 /* FNXViewController.h */,
 				85701E9C199DA55800046905 /* FNXViewController.m */,
+				85701ECD199DBC8E00046905 /* Controllers */,
+				85701EC3199DABBB00046905 /* Models */,
 				85701E9E199DA55800046905 /* Images.xcassets */,
 				85701E8D199DA55800046905 /* Supporting Files */,
 			);
@@ -248,14 +260,20 @@
 		85701ECD199DBC8E00046905 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				85701ECE199DBD0600046905 /* FNXPlayerViewController.h */,
-				85701ECF199DBD0600046905 /* FNXPlayerViewController.m */,
 				85701ED2199DBD2B00046905 /* FNXTeamListViewController.h */,
 				85701ED3199DBD2B00046905 /* FNXTeamListViewController.m */,
-				85701ED6199DC05900046905 /* FNXPlayerViewCell.h */,
-				85701ED7199DC05A00046905 /* FNXPlayerViewCell.m */,
 				85701EFE199E3BAC00046905 /* FNXTeamViewCell.h */,
 				85701EFF199E3BAC00046905 /* FNXTeamViewCell.m */,
+				85FE835B19A038D4001BBBCA /* FNXSearchViewController.h */,
+				85FE835C19A038D4001BBBCA /* FNXSearchViewController.m */,
+				85701F02199E6CFC00046905 /* FNXRosterViewController.h */,
+				85701F03199E6CFC00046905 /* FNXRosterViewController.m */,
+				85701F06199E6D9200046905 /* FNXRosterViewCell.h */,
+				85701F07199E6D9200046905 /* FNXRosterViewCell.m */,
+				85701ECE199DBD0600046905 /* FNXPlayerViewController.h */,
+				85701ECF199DBD0600046905 /* FNXPlayerViewController.m */,
+				85701ED6199DC05900046905 /* FNXPlayerViewCell.h */,
+				85701ED7199DC05A00046905 /* FNXPlayerViewCell.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -362,6 +380,7 @@
 				85701E97199DA55800046905 /* FNXAppDelegate.m in Sources */,
 				85701EFC199DC47300046905 /* FNXTeam.m in Sources */,
 				85701EF2199DC47300046905 /* FNXPitching.m in Sources */,
+				85701F08199E6D9200046905 /* FNXRosterViewCell.m in Sources */,
 				85701EF4199DC47300046905 /* FNXPitchingLevel.m in Sources */,
 				85701ECA199DABBB00046905 /* FNXRequest.m in Sources */,
 				85701EF0199DC47300046905 /* FNXBattingTeam.m in Sources */,
@@ -369,11 +388,13 @@
 				85701F00199E3BAC00046905 /* FNXTeamViewCell.m in Sources */,
 				85701ED8199DC05A00046905 /* FNXPlayerViewCell.m in Sources */,
 				85701EF8199DC47300046905 /* FNXStats.m in Sources */,
+				85FE835D19A038D4001BBBCA /* FNXSearchViewController.m in Sources */,
 				85701EEC199DC47300046905 /* FNXBatting.m in Sources */,
 				85701ED4199DBD2B00046905 /* FNXTeamListViewController.m in Sources */,
 				85701ED0199DBD0600046905 /* FNXPlayerViewController.m in Sources */,
 				85701EF6199DC47300046905 /* FNXPitchingTeam.m in Sources */,
 				85701E9D199DA55800046905 /* FNXViewController.m in Sources */,
+				85701F04199E6CFC00046905 /* FNXRosterViewController.m in Sources */,
 				85701EEE199DC47300046905 /* FNXBattingLevel.m in Sources */,
 				85701EFA199DC47300046905 /* FNXPlayer.m in Sources */,
 			);
@@ -391,10 +412,13 @@
 				85701EFB199DC47300046905 /* FNXPlayer.m in Sources */,
 				85701EF1199DC47300046905 /* FNXBattingTeam.m in Sources */,
 				85701EF5199DC47300046905 /* FNXPitchingLevel.m in Sources */,
+				85FE835E19A038D4001BBBCA /* FNXSearchViewController.m in Sources */,
 				85701ED1199DBD0600046905 /* FNXPlayerViewController.m in Sources */,
 				85701EED199DC47300046905 /* FNXBatting.m in Sources */,
 				85701F01199E3BAC00046905 /* FNXTeamViewCell.m in Sources */,
 				85701EC9199DABBB00046905 /* FNXYankeesAPI.m in Sources */,
+				85701F09199E6D9200046905 /* FNXRosterViewCell.m in Sources */,
+				85701F05199E6CFC00046905 /* FNXRosterViewController.m in Sources */,
 				85701ECB199DABBB00046905 /* FNXRequest.m in Sources */,
 				85701ED9199DC05A00046905 /* FNXPlayerViewCell.m in Sources */,
 				85701EB2199DA55800046905 /* YankeeFinderTests.m in Sources */,
@@ -595,6 +619,7 @@
 				85701EB7199DA55800046905 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85701EB8199DA55800046905 /* Build configuration list for PBXNativeTarget "YankeeFinderTests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +628,7 @@
 				85701EBA199DA55800046905 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

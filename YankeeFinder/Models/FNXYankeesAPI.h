@@ -15,6 +15,10 @@
 
 #pragma mark - API Call Methods
 -(void) getPlayerWithSearchString:(NSString *)searchString WithCallback:(FNXObjectCallback)callback;
+-(void) getPlayerWithId:(NSString *)playerId WithCallback:(FNXObjectCallback)callback;
+-(void) getPlayerStatsWithId:(NSString *)playerId WithCallback:(FNXObjectCallback)callback;
+-(void) getPlayerPhoto:(NSString *)photoUrl WithCallback:(FNXObjectCallback)callback;
 -(void) getTeamWithCallback:(FNXObjectCallback)callback;
+-(void) getRosterWithTeamId:(NSString *)teamId WithCallback:(FNXObjectCallback)callback;
 
 @end
