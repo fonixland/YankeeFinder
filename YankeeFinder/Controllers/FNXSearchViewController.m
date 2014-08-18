@@ -40,7 +40,13 @@
     [self performSegueWithIdentifier:@"searchResultsSegue" sender:self];
 }
 
-
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    [self searchButtonPressed:self];
+    
+    return YES;
+}
 
 #pragma mark - Navigation
 

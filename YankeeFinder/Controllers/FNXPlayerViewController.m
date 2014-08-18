@@ -7,6 +7,8 @@
 //
 
 #import "FNXPlayerViewController.h"
+#import "FNXBatting.h"
+#import "FNXPitching.h"
 
 @interface FNXPlayerViewController ()
 
@@ -56,15 +58,30 @@
      }];
     
     _birthInfo.text = [NSString stringWithFormat:@"Born: %@, %@, %@", _player.birthCity, _player.birthState, _player.birthCountry];
-    _playerNumber.text = [NSString stringWithFormat:@"Number: %@", _player.number];
+    _playerNumber.text = [NSString stringWithFormat:@"Jersey Number: %@", _player.number];
     
-    if (!_player.isPitcher) {
-        //get batting stats
-    }
-    else
-    {
-        //get pitching stats
-    }
+    // get stats
+    
+    [yankeesHandler getPlayerStatsWithId:[NSString stringWithFormat:@"%@", _player.playerID] WithCallback:^(NSDictionary *playerStatsDict, NSError *error)
+     {
+         if (!error) {
+             _playerStats = [FNXStats instanceFromDictionary:playerStatsDict];             
+             if (!_player.isPitcher) {
+                 //get batting stats
+                 for (FNXBatting *playerBatting in _playerStats.batting) {
+                     NSLog(@"%@", [playerBatting dictionaryRepresentation]);
+                 }
+             }
+             else
+             {
+                 //get pitching stats
+                 for (FNXPitching *playerPitching in _playerStats.pitching) {
+                     NSLog(@"%@", [playerPitching dictionaryRepresentation]);
+                 }
+             }
+             [_playerTableView reloadData];
+         }
+     }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,6 +89,66 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - TableView Methods
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+    headerView.backgroundColor = [UIColor lightGrayColor];
+    UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(-10, -5, 320, 30)];
+    headerLabel.textAlignment = NSTextAlignmentCenter;
+    //    headerLabel.center = headerView.center;
+    headerLabel.textColor = [UIColor whiteColor];
+
+    if (_player.isPitcher) {
+        headerLabel.text = @"PITCHING";
+    }
+    else
+    {
+        headerLabel.text = @"BATTING";
+    }
+
+    
+    [headerView addSubview:headerLabel];
+    
+    return headerView;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if (_player.isPitcher) {
+        return _playerStats.pitching.count;
+    }
+    else
+    {
+        return _playerStats.batting.count;
+    }
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    if (_player.isPitcher) {
+        FNXPitching *pitching = _playerStats.pitching[indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"Year: %@ - Outs: %@", pitching.yearID, pitching.oUTS];
+    }
+    else
+    {
+        FNXBatting *batting = _playerStats.batting[indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"Year: %@ - Home Runs: %@", batting.yearID, batting.hR];
+    }
+    
+    cell.textLabel.font = [UIFont fontWithName:@"Arial" size:15];
+    return cell;
+}
+
 
 /*
 #pragma mark - Navigation
